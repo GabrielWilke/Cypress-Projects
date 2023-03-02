@@ -4,7 +4,7 @@ describe('Login e registro de usuarios alura pic', () => {
       cy.visit('https://alura-fotos.herokuapp.com')
 
      })
-
+        // PRIMEIRO"" VERIFICA O ELEMENTO SEGUNDO"" É O CONTEUDO
     it('verifica mensagens validacao', () => {
         cy.contains('a', 'Register now').click();
         cy.contains('button', 'Register').click();
@@ -22,7 +22,7 @@ describe('Login e registro de usuarios alura pic', () => {
         cy.contains('ap-vmessage', 'Invalid e-mail').should('be.visible');
      
     })
-
+    
     it('verifica mensagens de senha com menos de 8 caracteres', () => {
         cy.contains('a', 'Register now').click();
         cy.contains('button', 'Register').click();
