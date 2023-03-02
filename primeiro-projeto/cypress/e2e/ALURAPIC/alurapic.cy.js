@@ -34,7 +34,7 @@ describe('Login e registro de usuarios alura pic', () => {
     it('verifica o uppercase no nome', () => {
         cy.contains('a', 'Register now').click();
         cy.contains('button', 'Register').click();
-        cy.get('input[formcontrolname="userName"]').type('GABRIEL');
+        cy.get('input[formcontrolname="userName"]').type('GABRIELWILKE');
         cy.contains('button', 'Register').click();
         cy.contains('ap-vmessage', 'Must be lower case').should('be.visible');
      
